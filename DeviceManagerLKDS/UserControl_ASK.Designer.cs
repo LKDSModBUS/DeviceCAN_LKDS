@@ -29,6 +29,7 @@ namespace DeviceManagerLKDS
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl_ASK));
             this.ask_pb = new System.Windows.Forms.PictureBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -71,14 +72,12 @@ namespace DeviceManagerLKDS
             this.panel1 = new System.Windows.Forms.Panel();
             this.device_name_lb = new System.Windows.Forms.Label();
             this.software_version_lb = new System.Windows.Forms.Label();
-            this.device_type_lb = new System.Windows.Forms.Label();
-            this.hardware_version_lb = new System.Windows.Forms.Label();
+            this.device_status_lb = new System.Windows.Forms.Label();
             this.device_address_lb = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.software_version_tb = new System.Windows.Forms.TextBox();
-            this.hardware_version_tb = new System.Windows.Forms.TextBox();
             this.device_address_tb = new System.Windows.Forms.TextBox();
-            this.device_type_tb = new System.Windows.Forms.TextBox();
+            this.device_status_tb = new System.Windows.Forms.TextBox();
             this.device_name_tb = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -160,12 +159,13 @@ namespace DeviceManagerLKDS
             // ask_pb
             // 
             this.ask_pb.BackColor = System.Drawing.SystemColors.Control;
+            this.ask_pb.Image = ((System.Drawing.Image)(resources.GetObject("ask_pb.Image")));
             this.ask_pb.Location = new System.Drawing.Point(3, 9);
             this.ask_pb.Name = "ask_pb";
             this.ask_pb.Size = new System.Drawing.Size(170, 170);
+            this.ask_pb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ask_pb.TabIndex = 0;
             this.ask_pb.TabStop = false;
-            this.ask_pb.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -184,7 +184,6 @@ namespace DeviceManagerLKDS
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60.99454F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(780, 506);
             this.tableLayoutPanel1.TabIndex = 20;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // panel4
             // 
@@ -599,8 +598,7 @@ namespace DeviceManagerLKDS
             // 
             this.panel1.Controls.Add(this.device_name_lb);
             this.panel1.Controls.Add(this.software_version_lb);
-            this.panel1.Controls.Add(this.device_type_lb);
-            this.panel1.Controls.Add(this.hardware_version_lb);
+            this.panel1.Controls.Add(this.device_status_lb);
             this.panel1.Controls.Add(this.device_address_lb);
             this.panel1.Controls.Add(this.ask_pb);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -608,7 +606,6 @@ namespace DeviceManagerLKDS
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(383, 191);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // device_name_lb
             // 
@@ -619,38 +616,26 @@ namespace DeviceManagerLKDS
             this.device_name_lb.Size = new System.Drawing.Size(157, 26);
             this.device_name_lb.TabIndex = 1;
             this.device_name_lb.Text = "Название прибора:";
-            this.device_name_lb.Click += new System.EventHandler(this.label1_Click);
             // 
             // software_version_lb
             // 
             this.software_version_lb.AutoSize = true;
             this.software_version_lb.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.software_version_lb.Location = new System.Drawing.Point(196, 147);
+            this.software_version_lb.Location = new System.Drawing.Point(196, 112);
             this.software_version_lb.Name = "software_version_lb";
             this.software_version_lb.Size = new System.Drawing.Size(180, 26);
             this.software_version_lb.TabIndex = 5;
             this.software_version_lb.Text = "Программная версия:";
             // 
-            // device_type_lb
+            // device_status_lb
             // 
-            this.device_type_lb.AutoSize = true;
-            this.device_type_lb.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.device_type_lb.Location = new System.Drawing.Point(261, 40);
-            this.device_type_lb.Name = "device_type_lb";
-            this.device_type_lb.Size = new System.Drawing.Size(115, 26);
-            this.device_type_lb.TabIndex = 2;
-            this.device_type_lb.Text = "Тип прибора:";
-            this.device_type_lb.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // hardware_version_lb
-            // 
-            this.hardware_version_lb.AutoSize = true;
-            this.hardware_version_lb.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.hardware_version_lb.Location = new System.Drawing.Point(201, 112);
-            this.hardware_version_lb.Name = "hardware_version_lb";
-            this.hardware_version_lb.Size = new System.Drawing.Size(175, 26);
-            this.hardware_version_lb.TabIndex = 4;
-            this.hardware_version_lb.Text = "Аппаратная версия:";
+            this.device_status_lb.AutoSize = true;
+            this.device_status_lb.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.device_status_lb.Location = new System.Drawing.Point(224, 39);
+            this.device_status_lb.Name = "device_status_lb";
+            this.device_status_lb.Size = new System.Drawing.Size(152, 26);
+            this.device_status_lb.TabIndex = 2;
+            this.device_status_lb.Text = "Cтатус прибора:";
             // 
             // device_address_lb
             // 
@@ -665,9 +650,8 @@ namespace DeviceManagerLKDS
             // panel2
             // 
             this.panel2.Controls.Add(this.software_version_tb);
-            this.panel2.Controls.Add(this.hardware_version_tb);
             this.panel2.Controls.Add(this.device_address_tb);
-            this.panel2.Controls.Add(this.device_type_tb);
+            this.panel2.Controls.Add(this.device_status_tb);
             this.panel2.Controls.Add(this.device_name_tb);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(392, 3);
@@ -677,17 +661,10 @@ namespace DeviceManagerLKDS
             // 
             // software_version_tb
             // 
-            this.software_version_tb.Location = new System.Drawing.Point(3, 152);
+            this.software_version_tb.Location = new System.Drawing.Point(3, 118);
             this.software_version_tb.Name = "software_version_tb";
             this.software_version_tb.Size = new System.Drawing.Size(379, 20);
             this.software_version_tb.TabIndex = 5;
-            // 
-            // hardware_version_tb
-            // 
-            this.hardware_version_tb.Location = new System.Drawing.Point(3, 117);
-            this.hardware_version_tb.Name = "hardware_version_tb";
-            this.hardware_version_tb.Size = new System.Drawing.Size(379, 20);
-            this.hardware_version_tb.TabIndex = 4;
             // 
             // device_address_tb
             // 
@@ -696,12 +673,12 @@ namespace DeviceManagerLKDS
             this.device_address_tb.Size = new System.Drawing.Size(379, 20);
             this.device_address_tb.TabIndex = 3;
             // 
-            // device_type_tb
+            // device_status_tb
             // 
-            this.device_type_tb.Location = new System.Drawing.Point(3, 45);
-            this.device_type_tb.Name = "device_type_tb";
-            this.device_type_tb.Size = new System.Drawing.Size(379, 20);
-            this.device_type_tb.TabIndex = 2;
+            this.device_status_tb.Location = new System.Drawing.Point(3, 45);
+            this.device_status_tb.Name = "device_status_tb";
+            this.device_status_tb.Size = new System.Drawing.Size(379, 20);
+            this.device_status_tb.TabIndex = 2;
             // 
             // device_name_tb
             // 
@@ -1139,17 +1116,15 @@ namespace DeviceManagerLKDS
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label device_name_lb;
         private System.Windows.Forms.Label software_version_lb;
-        private System.Windows.Forms.Label device_type_lb;
-        private System.Windows.Forms.Label hardware_version_lb;
+        private System.Windows.Forms.Label device_status_lb;
         private System.Windows.Forms.Label device_address_lb;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label trigger_state_lb;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox software_version_tb;
-        private System.Windows.Forms.TextBox hardware_version_tb;
         private System.Windows.Forms.TextBox device_address_tb;
-        private System.Windows.Forms.TextBox device_type_tb;
+        private System.Windows.Forms.TextBox device_status_tb;
         private System.Windows.Forms.TextBox device_name_tb;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel5;

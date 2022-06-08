@@ -46,11 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Class1.cs" />
+    <Compile Include="Form_ARV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Form_ARV.Designer.cs">
+      <DependentUpon>Form_ARV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ASK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ASK.Designer.cs">
+      <DependentUpon>Form_ASK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ATS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ATS.Designer.cs">
+      <DependentUpon>Form_ATS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ATU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ATU.Designer.cs">
+      <DependentUpon>Form_ATU.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,8 +97,17 @@
     <Compile Include="UserControl_ATS.Designer.cs">
       <DependentUpon>UserControl_ATS.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Form_ARV.resx">
+      <DependentUpon>Form_ARV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ASK.resx">
+      <DependentUpon>Form_ASK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ATS.resx">
+      <DependentUpon>Form_ATS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ATU.resx">
+      <DependentUpon>Form_ATU.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

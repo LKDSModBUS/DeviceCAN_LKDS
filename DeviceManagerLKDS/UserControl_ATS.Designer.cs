@@ -29,19 +29,18 @@ namespace DeviceManagerLKDS
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl_ATS));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.device_name_lb = new System.Windows.Forms.Label();
             this.software_version_lb = new System.Windows.Forms.Label();
-            this.device_type_lb = new System.Windows.Forms.Label();
-            this.hardware_version_lb = new System.Windows.Forms.Label();
+            this.device_status_lb = new System.Windows.Forms.Label();
             this.device_address_lb = new System.Windows.Forms.Label();
             this.ats_pb = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.software_version_tb = new System.Windows.Forms.TextBox();
-            this.hardware_version_tb = new System.Windows.Forms.TextBox();
             this.device_address_tb = new System.Windows.Forms.TextBox();
-            this.device_type_tb = new System.Windows.Forms.TextBox();
+            this.device_status_tb = new System.Windows.Forms.TextBox();
             this.device_name_tb = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dry_contacts_lb = new System.Windows.Forms.Label();
@@ -63,6 +62,25 @@ namespace DeviceManagerLKDS
             this.in_2_pb_sk1 = new System.Windows.Forms.PictureBox();
             this.in_1_pb_sk1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.reset_btn = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.reset5_btn = new System.Windows.Forms.Button();
+            this.reset6_btn = new System.Windows.Forms.Button();
+            this.reset7_btn = new System.Windows.Forms.Button();
+            this.reset8_btn = new System.Windows.Forms.Button();
+            this.in_4_pb_ts2 = new System.Windows.Forms.PictureBox();
+            this.in_3_pb_ts2 = new System.Windows.Forms.PictureBox();
+            this.in_2_pb_ts2 = new System.Windows.Forms.PictureBox();
+            this.in_1_pb_ts2 = new System.Windows.Forms.PictureBox();
+            this.reset4_btn = new System.Windows.Forms.Button();
+            this.reset3_btn = new System.Windows.Forms.Button();
+            this.reset2_btn = new System.Windows.Forms.Button();
+            this.reset1_btn = new System.Windows.Forms.Button();
+            this.in_4_pb_ts1 = new System.Windows.Forms.PictureBox();
+            this.in_3_pb_ts1 = new System.Windows.Forms.PictureBox();
+            this.in_2_pb_ts1 = new System.Windows.Forms.PictureBox();
+            this.in_1_pb_ts1 = new System.Windows.Forms.PictureBox();
+            this.trigger_state_lb = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ats_pb)).BeginInit();
@@ -77,6 +95,16 @@ namespace DeviceManagerLKDS
             ((System.ComponentModel.ISupportInitialize)(this.in_3_pb_sk1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.in_2_pb_sk1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.in_1_pb_sk1)).BeginInit();
+            this.panel4.SuspendLayout();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.in_4_pb_ts2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in_3_pb_ts2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in_2_pb_ts2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in_1_pb_ts2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in_4_pb_ts1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in_3_pb_ts1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in_2_pb_ts1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in_1_pb_ts1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -101,8 +129,7 @@ namespace DeviceManagerLKDS
             // 
             this.panel1.Controls.Add(this.device_name_lb);
             this.panel1.Controls.Add(this.software_version_lb);
-            this.panel1.Controls.Add(this.device_type_lb);
-            this.panel1.Controls.Add(this.hardware_version_lb);
+            this.panel1.Controls.Add(this.device_status_lb);
             this.panel1.Controls.Add(this.device_address_lb);
             this.panel1.Controls.Add(this.ats_pb);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -110,7 +137,6 @@ namespace DeviceManagerLKDS
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(384, 178);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // device_name_lb
             // 
@@ -126,31 +152,21 @@ namespace DeviceManagerLKDS
             // 
             this.software_version_lb.AutoSize = true;
             this.software_version_lb.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.software_version_lb.Location = new System.Drawing.Point(201, 147);
+            this.software_version_lb.Location = new System.Drawing.Point(201, 112);
             this.software_version_lb.Name = "software_version_lb";
             this.software_version_lb.Size = new System.Drawing.Size(180, 26);
             this.software_version_lb.TabIndex = 17;
             this.software_version_lb.Text = "Программная версия:";
             // 
-            // device_type_lb
+            // device_status_lb
             // 
-            this.device_type_lb.AutoSize = true;
-            this.device_type_lb.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.device_type_lb.Location = new System.Drawing.Point(266, 40);
-            this.device_type_lb.Name = "device_type_lb";
-            this.device_type_lb.Size = new System.Drawing.Size(115, 26);
-            this.device_type_lb.TabIndex = 14;
-            this.device_type_lb.Text = "Тип прибора:";
-            // 
-            // hardware_version_lb
-            // 
-            this.hardware_version_lb.AutoSize = true;
-            this.hardware_version_lb.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.hardware_version_lb.Location = new System.Drawing.Point(206, 112);
-            this.hardware_version_lb.Name = "hardware_version_lb";
-            this.hardware_version_lb.Size = new System.Drawing.Size(175, 26);
-            this.hardware_version_lb.TabIndex = 16;
-            this.hardware_version_lb.Text = "Аппаратная версия:";
+            this.device_status_lb.AutoSize = true;
+            this.device_status_lb.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.device_status_lb.Location = new System.Drawing.Point(229, 39);
+            this.device_status_lb.Name = "device_status_lb";
+            this.device_status_lb.Size = new System.Drawing.Size(152, 26);
+            this.device_status_lb.TabIndex = 14;
+            this.device_status_lb.Text = "Статус прибора:";
             // 
             // device_address_lb
             // 
@@ -165,18 +181,19 @@ namespace DeviceManagerLKDS
             // ats_pb
             // 
             this.ats_pb.BackColor = System.Drawing.SystemColors.Control;
+            this.ats_pb.Image = ((System.Drawing.Image)(resources.GetObject("ats_pb.Image")));
             this.ats_pb.Location = new System.Drawing.Point(3, 4);
             this.ats_pb.Name = "ats_pb";
             this.ats_pb.Size = new System.Drawing.Size(170, 170);
+            this.ats_pb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ats_pb.TabIndex = 12;
             this.ats_pb.TabStop = false;
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.software_version_tb);
-            this.panel2.Controls.Add(this.hardware_version_tb);
             this.panel2.Controls.Add(this.device_address_tb);
-            this.panel2.Controls.Add(this.device_type_tb);
+            this.panel2.Controls.Add(this.device_status_tb);
             this.panel2.Controls.Add(this.device_name_tb);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(393, 3);
@@ -186,17 +203,10 @@ namespace DeviceManagerLKDS
             // 
             // software_version_tb
             // 
-            this.software_version_tb.Location = new System.Drawing.Point(3, 152);
+            this.software_version_tb.Location = new System.Drawing.Point(3, 118);
             this.software_version_tb.Name = "software_version_tb";
             this.software_version_tb.Size = new System.Drawing.Size(379, 20);
             this.software_version_tb.TabIndex = 15;
-            // 
-            // hardware_version_tb
-            // 
-            this.hardware_version_tb.Location = new System.Drawing.Point(3, 117);
-            this.hardware_version_tb.Name = "hardware_version_tb";
-            this.hardware_version_tb.Size = new System.Drawing.Size(379, 20);
-            this.hardware_version_tb.TabIndex = 14;
             // 
             // device_address_tb
             // 
@@ -205,12 +215,12 @@ namespace DeviceManagerLKDS
             this.device_address_tb.Size = new System.Drawing.Size(379, 20);
             this.device_address_tb.TabIndex = 13;
             // 
-            // device_type_tb
+            // device_status_tb
             // 
-            this.device_type_tb.Location = new System.Drawing.Point(3, 45);
-            this.device_type_tb.Name = "device_type_tb";
-            this.device_type_tb.Size = new System.Drawing.Size(379, 20);
-            this.device_type_tb.TabIndex = 12;
+            this.device_status_tb.Location = new System.Drawing.Point(3, 45);
+            this.device_status_tb.Name = "device_status_tb";
+            this.device_status_tb.Size = new System.Drawing.Size(379, 20);
+            this.device_status_tb.TabIndex = 12;
             // 
             // device_name_tb
             // 
@@ -262,7 +272,6 @@ namespace DeviceManagerLKDS
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(221, 267);
             this.panel5.TabIndex = 8;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // in_4_lb2
             // 
@@ -283,7 +292,6 @@ namespace DeviceManagerLKDS
             this.in_3_lb2.Size = new System.Drawing.Size(27, 15);
             this.in_3_lb2.TabIndex = 26;
             this.in_3_lb2.Text = "In 3";
-            this.in_3_lb2.Click += new System.EventHandler(this.label18_Click);
             // 
             // in_2_lb2
             // 
@@ -419,11 +427,228 @@ namespace DeviceManagerLKDS
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.reset_btn);
+            this.panel4.Controls.Add(this.panel6);
+            this.panel4.Controls.Add(this.trigger_state_lb);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(393, 187);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(384, 316);
             this.panel4.TabIndex = 3;
+            // 
+            // reset_btn
+            // 
+            this.reset_btn.BackColor = System.Drawing.Color.GhostWhite;
+            this.reset_btn.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.reset_btn.ForeColor = System.Drawing.Color.Black;
+            this.reset_btn.Location = new System.Drawing.Point(313, 35);
+            this.reset_btn.Name = "reset_btn";
+            this.reset_btn.Size = new System.Drawing.Size(60, 33);
+            this.reset_btn.TabIndex = 14;
+            this.reset_btn.Text = "СБРОС";
+            this.reset_btn.UseVisualStyleBackColor = false;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.panel6.Controls.Add(this.reset5_btn);
+            this.panel6.Controls.Add(this.reset6_btn);
+            this.panel6.Controls.Add(this.reset7_btn);
+            this.panel6.Controls.Add(this.reset8_btn);
+            this.panel6.Controls.Add(this.in_4_pb_ts2);
+            this.panel6.Controls.Add(this.in_3_pb_ts2);
+            this.panel6.Controls.Add(this.in_2_pb_ts2);
+            this.panel6.Controls.Add(this.in_1_pb_ts2);
+            this.panel6.Controls.Add(this.reset4_btn);
+            this.panel6.Controls.Add(this.reset3_btn);
+            this.panel6.Controls.Add(this.reset2_btn);
+            this.panel6.Controls.Add(this.reset1_btn);
+            this.panel6.Controls.Add(this.in_4_pb_ts1);
+            this.panel6.Controls.Add(this.in_3_pb_ts1);
+            this.panel6.Controls.Add(this.in_2_pb_ts1);
+            this.panel6.Controls.Add(this.in_1_pb_ts1);
+            this.panel6.Location = new System.Drawing.Point(86, 35);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(221, 267);
+            this.panel6.TabIndex = 13;
+            // 
+            // reset5_btn
+            // 
+            this.reset5_btn.BackColor = System.Drawing.Color.Lavender;
+            this.reset5_btn.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.reset5_btn.ForeColor = System.Drawing.Color.Black;
+            this.reset5_btn.Location = new System.Drawing.Point(121, 106);
+            this.reset5_btn.Name = "reset5_btn";
+            this.reset5_btn.Size = new System.Drawing.Size(52, 24);
+            this.reset5_btn.TabIndex = 49;
+            this.reset5_btn.Text = "Сброс";
+            this.reset5_btn.UseVisualStyleBackColor = false;
+            // 
+            // reset6_btn
+            // 
+            this.reset6_btn.BackColor = System.Drawing.Color.Lavender;
+            this.reset6_btn.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.reset6_btn.ForeColor = System.Drawing.Color.Black;
+            this.reset6_btn.Location = new System.Drawing.Point(121, 75);
+            this.reset6_btn.Name = "reset6_btn";
+            this.reset6_btn.Size = new System.Drawing.Size(52, 24);
+            this.reset6_btn.TabIndex = 48;
+            this.reset6_btn.Text = "Сброс";
+            this.reset6_btn.UseVisualStyleBackColor = false;
+            // 
+            // reset7_btn
+            // 
+            this.reset7_btn.BackColor = System.Drawing.Color.Lavender;
+            this.reset7_btn.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.reset7_btn.ForeColor = System.Drawing.Color.Black;
+            this.reset7_btn.Location = new System.Drawing.Point(121, 44);
+            this.reset7_btn.Name = "reset7_btn";
+            this.reset7_btn.Size = new System.Drawing.Size(52, 24);
+            this.reset7_btn.TabIndex = 47;
+            this.reset7_btn.Text = "Сброс";
+            this.reset7_btn.UseVisualStyleBackColor = false;
+            // 
+            // reset8_btn
+            // 
+            this.reset8_btn.BackColor = System.Drawing.Color.Lavender;
+            this.reset8_btn.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.reset8_btn.ForeColor = System.Drawing.Color.Black;
+            this.reset8_btn.Location = new System.Drawing.Point(121, 13);
+            this.reset8_btn.Name = "reset8_btn";
+            this.reset8_btn.Size = new System.Drawing.Size(52, 24);
+            this.reset8_btn.TabIndex = 46;
+            this.reset8_btn.Text = "Сброс";
+            this.reset8_btn.UseVisualStyleBackColor = false;
+            // 
+            // in_4_pb_ts2
+            // 
+            this.in_4_pb_ts2.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.in_4_pb_ts2.Location = new System.Drawing.Point(179, 105);
+            this.in_4_pb_ts2.Name = "in_4_pb_ts2";
+            this.in_4_pb_ts2.Size = new System.Drawing.Size(26, 25);
+            this.in_4_pb_ts2.TabIndex = 43;
+            this.in_4_pb_ts2.TabStop = false;
+            // 
+            // in_3_pb_ts2
+            // 
+            this.in_3_pb_ts2.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.in_3_pb_ts2.Location = new System.Drawing.Point(179, 74);
+            this.in_3_pb_ts2.Name = "in_3_pb_ts2";
+            this.in_3_pb_ts2.Size = new System.Drawing.Size(26, 25);
+            this.in_3_pb_ts2.TabIndex = 42;
+            this.in_3_pb_ts2.TabStop = false;
+            // 
+            // in_2_pb_ts2
+            // 
+            this.in_2_pb_ts2.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.in_2_pb_ts2.Location = new System.Drawing.Point(179, 43);
+            this.in_2_pb_ts2.Name = "in_2_pb_ts2";
+            this.in_2_pb_ts2.Size = new System.Drawing.Size(26, 25);
+            this.in_2_pb_ts2.TabIndex = 41;
+            this.in_2_pb_ts2.TabStop = false;
+            // 
+            // in_1_pb_ts2
+            // 
+            this.in_1_pb_ts2.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.in_1_pb_ts2.Location = new System.Drawing.Point(179, 12);
+            this.in_1_pb_ts2.Name = "in_1_pb_ts2";
+            this.in_1_pb_ts2.Size = new System.Drawing.Size(26, 25);
+            this.in_1_pb_ts2.TabIndex = 40;
+            this.in_1_pb_ts2.TabStop = false;
+            // 
+            // reset4_btn
+            // 
+            this.reset4_btn.BackColor = System.Drawing.Color.Lavender;
+            this.reset4_btn.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.reset4_btn.ForeColor = System.Drawing.Color.Black;
+            this.reset4_btn.Location = new System.Drawing.Point(50, 106);
+            this.reset4_btn.Name = "reset4_btn";
+            this.reset4_btn.Size = new System.Drawing.Size(52, 24);
+            this.reset4_btn.TabIndex = 35;
+            this.reset4_btn.Text = "Сброс";
+            this.reset4_btn.UseVisualStyleBackColor = false;
+            // 
+            // reset3_btn
+            // 
+            this.reset3_btn.BackColor = System.Drawing.Color.Lavender;
+            this.reset3_btn.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.reset3_btn.ForeColor = System.Drawing.Color.Black;
+            this.reset3_btn.Location = new System.Drawing.Point(50, 75);
+            this.reset3_btn.Name = "reset3_btn";
+            this.reset3_btn.Size = new System.Drawing.Size(52, 24);
+            this.reset3_btn.TabIndex = 34;
+            this.reset3_btn.Text = "Сброс";
+            this.reset3_btn.UseVisualStyleBackColor = false;
+            // 
+            // reset2_btn
+            // 
+            this.reset2_btn.BackColor = System.Drawing.Color.Lavender;
+            this.reset2_btn.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.reset2_btn.ForeColor = System.Drawing.Color.Black;
+            this.reset2_btn.Location = new System.Drawing.Point(50, 44);
+            this.reset2_btn.Name = "reset2_btn";
+            this.reset2_btn.Size = new System.Drawing.Size(52, 24);
+            this.reset2_btn.TabIndex = 33;
+            this.reset2_btn.Text = "Сброс";
+            this.reset2_btn.UseVisualStyleBackColor = false;
+            // 
+            // reset1_btn
+            // 
+            this.reset1_btn.BackColor = System.Drawing.Color.Lavender;
+            this.reset1_btn.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.reset1_btn.ForeColor = System.Drawing.Color.Black;
+            this.reset1_btn.Location = new System.Drawing.Point(50, 13);
+            this.reset1_btn.Name = "reset1_btn";
+            this.reset1_btn.Size = new System.Drawing.Size(52, 24);
+            this.reset1_btn.TabIndex = 32;
+            this.reset1_btn.Text = "Сброс";
+            this.reset1_btn.UseVisualStyleBackColor = false;
+            // 
+            // in_4_pb_ts1
+            // 
+            this.in_4_pb_ts1.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.in_4_pb_ts1.Location = new System.Drawing.Point(18, 105);
+            this.in_4_pb_ts1.Name = "in_4_pb_ts1";
+            this.in_4_pb_ts1.Size = new System.Drawing.Size(26, 25);
+            this.in_4_pb_ts1.TabIndex = 19;
+            this.in_4_pb_ts1.TabStop = false;
+            // 
+            // in_3_pb_ts1
+            // 
+            this.in_3_pb_ts1.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.in_3_pb_ts1.Location = new System.Drawing.Point(18, 74);
+            this.in_3_pb_ts1.Name = "in_3_pb_ts1";
+            this.in_3_pb_ts1.Size = new System.Drawing.Size(26, 25);
+            this.in_3_pb_ts1.TabIndex = 18;
+            this.in_3_pb_ts1.TabStop = false;
+            // 
+            // in_2_pb_ts1
+            // 
+            this.in_2_pb_ts1.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.in_2_pb_ts1.Location = new System.Drawing.Point(18, 43);
+            this.in_2_pb_ts1.Name = "in_2_pb_ts1";
+            this.in_2_pb_ts1.Size = new System.Drawing.Size(26, 25);
+            this.in_2_pb_ts1.TabIndex = 17;
+            this.in_2_pb_ts1.TabStop = false;
+            // 
+            // in_1_pb_ts1
+            // 
+            this.in_1_pb_ts1.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.in_1_pb_ts1.Location = new System.Drawing.Point(18, 12);
+            this.in_1_pb_ts1.Name = "in_1_pb_ts1";
+            this.in_1_pb_ts1.Size = new System.Drawing.Size(26, 25);
+            this.in_1_pb_ts1.TabIndex = 16;
+            this.in_1_pb_ts1.TabStop = false;
+            // 
+            // trigger_state_lb
+            // 
+            this.trigger_state_lb.AutoSize = true;
+            this.trigger_state_lb.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.trigger_state_lb.Location = new System.Drawing.Point(106, 5);
+            this.trigger_state_lb.Name = "trigger_state_lb";
+            this.trigger_state_lb.Size = new System.Drawing.Size(185, 26);
+            this.trigger_state_lb.TabIndex = 12;
+            this.trigger_state_lb.Text = "Триггерное состояние";
             // 
             // UserControl_ATS
             // 
@@ -451,6 +676,17 @@ namespace DeviceManagerLKDS
             ((System.ComponentModel.ISupportInitialize)(this.in_3_pb_sk1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.in_2_pb_sk1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.in_1_pb_sk1)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.in_4_pb_ts2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in_3_pb_ts2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in_2_pb_ts2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in_1_pb_ts2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in_4_pb_ts1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in_3_pb_ts1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in_2_pb_ts1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in_1_pb_ts1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -464,14 +700,12 @@ namespace DeviceManagerLKDS
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label device_name_lb;
         private System.Windows.Forms.Label software_version_lb;
-        private System.Windows.Forms.Label device_type_lb;
-        private System.Windows.Forms.Label hardware_version_lb;
+        private System.Windows.Forms.Label device_status_lb;
         private System.Windows.Forms.Label device_address_lb;
         private System.Windows.Forms.PictureBox ats_pb;
         private System.Windows.Forms.TextBox software_version_tb;
-        private System.Windows.Forms.TextBox hardware_version_tb;
         private System.Windows.Forms.TextBox device_address_tb;
-        private System.Windows.Forms.TextBox device_type_tb;
+        private System.Windows.Forms.TextBox device_status_tb;
         private System.Windows.Forms.TextBox device_name_tb;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label in_4_lb2;
@@ -491,5 +725,24 @@ namespace DeviceManagerLKDS
         private System.Windows.Forms.PictureBox in_2_pb_sk1;
         private System.Windows.Forms.PictureBox in_1_pb_sk1;
         private System.Windows.Forms.Label dry_contacts_lb;
+        private System.Windows.Forms.Button reset_btn;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Button reset5_btn;
+        private System.Windows.Forms.Button reset6_btn;
+        private System.Windows.Forms.Button reset7_btn;
+        private System.Windows.Forms.Button reset8_btn;
+        private System.Windows.Forms.PictureBox in_4_pb_ts2;
+        private System.Windows.Forms.PictureBox in_3_pb_ts2;
+        private System.Windows.Forms.PictureBox in_2_pb_ts2;
+        private System.Windows.Forms.PictureBox in_1_pb_ts2;
+        private System.Windows.Forms.Button reset4_btn;
+        private System.Windows.Forms.Button reset3_btn;
+        private System.Windows.Forms.Button reset2_btn;
+        private System.Windows.Forms.Button reset1_btn;
+        private System.Windows.Forms.PictureBox in_4_pb_ts1;
+        private System.Windows.Forms.PictureBox in_3_pb_ts1;
+        private System.Windows.Forms.PictureBox in_2_pb_ts1;
+        private System.Windows.Forms.PictureBox in_1_pb_ts1;
+        private System.Windows.Forms.Label trigger_state_lb;
     }
 }
