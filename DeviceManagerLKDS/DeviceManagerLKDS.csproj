@@ -47,6 +47,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="FormPKD216.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPKD216.Designer.cs">
+      <DependentUpon>FormPKD216.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPKD22.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPKD22.Designer.cs">
+      <DependentUpon>FormPKD22.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_APU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_APU.Designer.cs">
+      <DependentUpon>Form_APU.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_ARV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,18 +103,39 @@
     <Compile Include="UserControl1_ATU.Designer.cs">
       <DependentUpon>UserControl1_ATU.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl_APU.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_APU.Designer.cs">
+      <DependentUpon>UserControl_APU.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl_ASK.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControl_ASK.Designer.cs">
       <DependentUpon>UserControl_ASK.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl_ATS.cs">
+    <Compile Include="UserControl_PKD_2_16.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl_ATS.Designer.cs">
-      <DependentUpon>UserControl_ATS.cs</DependentUpon>
+    <Compile Include="UserControl_PKD_2_16.Designer.cs">
+      <DependentUpon>UserControl_PKD_2_16.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl_PKD_2_2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_PKD_2_2.Designer.cs">
+      <DependentUpon>UserControl_PKD_2_2.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormPKD216.resx">
+      <DependentUpon>FormPKD216.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPKD22.resx">
+      <DependentUpon>FormPKD22.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_APU.resx">
+      <DependentUpon>Form_APU.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_ARV.resx">
       <DependentUpon>Form_ARV.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,11 +163,17 @@
     <EmbeddedResource Include="UserControl1_ATU.resx">
       <DependentUpon>UserControl1_ATU.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_APU.resx">
+      <DependentUpon>UserControl_APU.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl_ASK.resx">
       <DependentUpon>UserControl_ASK.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl_ATS.resx">
-      <DependentUpon>UserControl_ATS.cs</DependentUpon>
+    <EmbeddedResource Include="UserControl_PKD_2_16.resx">
+      <DependentUpon>UserControl_PKD_2_16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_PKD_2_2.resx">
+      <DependentUpon>UserControl_PKD_2_2.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

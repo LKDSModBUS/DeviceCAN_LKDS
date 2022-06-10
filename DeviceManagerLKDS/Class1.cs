@@ -96,5 +96,44 @@ namespace DeviceManagerLKDS
             [Description("Обнаружен рестарт устройства-нет данных")]
             restart = 5,
         }
+        public enum Key_Format
+        {
+            [Description("Неизвестный формат ключа")]
+            unknown_format = 0x00,
+            [Description("Формат ключа Dallas")]
+            dallas = 0x01,
+            [Description("EM-Marine")]
+            em_marine = 0x02,
+            [Description("EM-Marine (ручной ввод)")]
+            em_marine_manual_input = 0x03,
+            [Description("Mifare Classic")]
+            mifare_classic = 0x04,
+            [Description("Mifare Classic (ручной ввод)")]
+            mifare_classic_manual_input = 0x05,
+            [Description("Mifare 1K")]
+            mifare_1K = 0x06,
+            [Description("Mifare 1K (ручной ввод)")]
+            mifare_1K_manual_input = 0x07,
+            [Description("Mifare 4K")]
+            mifare_4K = 0x08,
+            [Description("Mifare 4K (ручной ввод)")]
+            mifare_4K_manual_input = 0x09,
+            [Description("Mifare UltraLight")]
+            mifare_ultra_light = 0x0A,
+            [Description("Mifare UltraLight (ручной ввод)")]
+            mifare_ultra_light_manual_input = 0x0B,
+            [Description("HID ProxCard II")]
+            HID_Prox_Card_II = 0x0C,
+            [Description("HID ProxCard II (ручной ввод)")]
+            HID_Prox_Card_II_manual_input = 0x0D,
+            [Description("клавиатура")]
+            keyboard = 0x0E,
+            [Description("RF-433тип 1")]
+            rf = 0x0F,
+            [Description("Wiegand - абстрактный ключ, полученный в формате Wiegand")]
+            wiegand = 0x10,
+            [Description("кнопка (открывания)")]
+            opening_button = 0x11,
+        }
     }
 }

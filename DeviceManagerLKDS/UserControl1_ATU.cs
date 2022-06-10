@@ -35,7 +35,7 @@ namespace DeviceManagerLKDS
                     in_3_pb_sk.BackColor = ((array[3] & 0x04) != 0) ? Color.Green : Color.White;
                     in_4_pb_sk.BackColor = ((array[3] & 0x08) != 0) ? Color.Green : Color.White;
                     in_5_pb_sk.BackColor = ((array[3] & 0x10) != 0) ? Color.Green : Color.White;
-                    in_6_pb_sk.BackColor = ((array[3] & 0x020) != 0) ? Color.Green : Color.White;
+                    in_6_pb_sk.BackColor = ((array[3] & 0x20) != 0) ? Color.Green : Color.White;
                     in_7_pb_sk.BackColor = ((array[3] & 0x40) != 0) ? Color.Green : Color.White;
                     in_8_pb_sk.BackColor = ((array[3] & 0x80) != 0) ? Color.Green : Color.White;
 
@@ -47,6 +47,9 @@ namespace DeviceManagerLKDS
                     in_6_pb_ts.BackColor = ((array[5] & 0x02) != 0) ? Color.Green : Color.White;
                     in_7_pb_ts.BackColor = ((array[5] & 0x04) != 0) ? Color.Green : Color.White;
                     in_8_pb_ts.BackColor = ((array[5] & 0x08) != 0) ? Color.Green : Color.White;
+
+                    out_pb1.BackColor = ((array[7] & 0x01) != 0) ? Color.Green : Color.White;
+                    out_pb2.BackColor = ((array[7] & 0x02) != 0) ? Color.Green : Color.White;
 
 
                     software_version_tb.Text = $"{array[8]}.{array[9]}.{array[10]}";

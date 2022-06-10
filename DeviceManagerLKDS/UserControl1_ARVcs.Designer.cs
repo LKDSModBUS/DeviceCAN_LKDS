@@ -32,37 +32,38 @@ namespace DeviceManagerLKDS
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl1_ARVcs));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.software_version_tb = new System.Windows.Forms.TextBox();
             this.device_name_lb = new System.Windows.Forms.Label();
+            this.device_address_tb = new System.Windows.Forms.TextBox();
             this.software_version_lb = new System.Windows.Forms.Label();
+            this.device_status_tb = new System.Windows.Forms.TextBox();
             this.device_status_lb = new System.Windows.Forms.Label();
+            this.device_name_tb = new System.Windows.Forms.TextBox();
             this.device_address_lb = new System.Windows.Forms.Label();
             this.arv_pb = new System.Windows.Forms.PictureBox();
-            this.device_status_tb = new System.Windows.Forms.TextBox();
-            this.device_address_tb = new System.Windows.Forms.TextBox();
-            this.software_version_tb = new System.Windows.Forms.TextBox();
-            this.device_name_tb = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.dry_contacts_lb = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.in_8_lb = new System.Windows.Forms.Label();
-            this.in_7_lb = new System.Windows.Forms.Label();
-            this.in_6_lb = new System.Windows.Forms.Label();
-            this.in_5_lb = new System.Windows.Forms.Label();
-            this.in_4_lb = new System.Windows.Forms.Label();
-            this.in_3_lb = new System.Windows.Forms.Label();
-            this.in_2_lb = new System.Windows.Forms.Label();
-            this.in_1_lb = new System.Windows.Forms.Label();
-            this.in_8_pb_sk = new System.Windows.Forms.PictureBox();
-            this.in_7_pb_sk = new System.Windows.Forms.PictureBox();
-            this.in_6_pb_sk = new System.Windows.Forms.PictureBox();
-            this.in_5_pb_sk = new System.Windows.Forms.PictureBox();
-            this.in_4_pb_sk = new System.Windows.Forms.PictureBox();
-            this.in_3_pb_sk = new System.Windows.Forms.PictureBox();
-            this.in_2_pb_sk = new System.Windows.Forms.PictureBox();
-            this.in_1_pb_sk = new System.Windows.Forms.PictureBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.vykl_btn6 = new System.Windows.Forms.Button();
+            this.vykl_btn5 = new System.Windows.Forms.Button();
+            this.vkl_btn6 = new System.Windows.Forms.Button();
+            this.vkl_btn5 = new System.Windows.Forms.Button();
+            this.out_pb6 = new System.Windows.Forms.PictureBox();
+            this.out_pb5 = new System.Windows.Forms.PictureBox();
+            this.vykl_btn4 = new System.Windows.Forms.Button();
+            this.vykl_btn3 = new System.Windows.Forms.Button();
+            this.vkl_btn4 = new System.Windows.Forms.Button();
+            this.vkl_btn3 = new System.Windows.Forms.Button();
+            this.out_pb4 = new System.Windows.Forms.PictureBox();
+            this.out_pb3 = new System.Windows.Forms.PictureBox();
+            this.vykl_btn2 = new System.Windows.Forms.Button();
+            this.vykl_btn1 = new System.Windows.Forms.Button();
+            this.vkl_btn2 = new System.Windows.Forms.Button();
+            this.vkl_btn1 = new System.Windows.Forms.Button();
+            this.out_pb2 = new System.Windows.Forms.PictureBox();
+            this.out_pb1 = new System.Windows.Forms.PictureBox();
+            this.management_lb = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.reset_btn = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.reset18_btn = new System.Windows.Forms.Button();
@@ -82,42 +83,38 @@ namespace DeviceManagerLKDS
             this.in_2_pb_ts = new System.Windows.Forms.PictureBox();
             this.in_1_pb_ts = new System.Windows.Forms.PictureBox();
             this.trigger_state_lb = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.vykl_btn2 = new System.Windows.Forms.Button();
-            this.vykl_btn1 = new System.Windows.Forms.Button();
-            this.vkl_btn2 = new System.Windows.Forms.Button();
-            this.vkl_btn1 = new System.Windows.Forms.Button();
-            this.out_pb2 = new System.Windows.Forms.PictureBox();
-            this.out_pb1 = new System.Windows.Forms.PictureBox();
-            this.management_lb = new System.Windows.Forms.Label();
-            this.vykl_btn4 = new System.Windows.Forms.Button();
-            this.vykl_btn3 = new System.Windows.Forms.Button();
-            this.vkl_btn4 = new System.Windows.Forms.Button();
-            this.vkl_btn3 = new System.Windows.Forms.Button();
-            this.out_pb4 = new System.Windows.Forms.PictureBox();
-            this.out_pb3 = new System.Windows.Forms.PictureBox();
-            this.vykl_btn6 = new System.Windows.Forms.Button();
-            this.vykl_btn5 = new System.Windows.Forms.Button();
-            this.vkl_btn6 = new System.Windows.Forms.Button();
-            this.vkl_btn5 = new System.Windows.Forms.Button();
-            this.out_pb6 = new System.Windows.Forms.PictureBox();
-            this.out_pb5 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.dry_contacts_lb = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.in_8_lb = new System.Windows.Forms.Label();
+            this.in_7_lb = new System.Windows.Forms.Label();
+            this.in_6_lb = new System.Windows.Forms.Label();
+            this.in_5_lb = new System.Windows.Forms.Label();
+            this.in_4_lb = new System.Windows.Forms.Label();
+            this.in_3_lb = new System.Windows.Forms.Label();
+            this.in_2_lb = new System.Windows.Forms.Label();
+            this.in_1_lb = new System.Windows.Forms.Label();
+            this.in_8_pb_sk = new System.Windows.Forms.PictureBox();
+            this.in_7_pb_sk = new System.Windows.Forms.PictureBox();
+            this.in_6_pb_sk = new System.Windows.Forms.PictureBox();
+            this.in_5_pb_sk = new System.Windows.Forms.PictureBox();
+            this.in_4_pb_sk = new System.Windows.Forms.PictureBox();
+            this.in_3_pb_sk = new System.Windows.Forms.PictureBox();
+            this.in_2_pb_sk = new System.Windows.Forms.PictureBox();
+            this.in_1_pb_sk = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.arv_pb)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.in_8_pb_sk)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.in_7_pb_sk)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.in_6_pb_sk)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.in_5_pb_sk)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.in_4_pb_sk)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.in_3_pb_sk)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.in_2_pb_sk)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.in_1_pb_sk)).BeginInit();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.out_pb6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.out_pb5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.out_pb4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.out_pb3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.out_pb2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.out_pb1)).BeginInit();
+            this.panel3.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.in_8_pb_ts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.in_7_pb_ts)).BeginInit();
@@ -127,13 +124,16 @@ namespace DeviceManagerLKDS
             ((System.ComponentModel.ISupportInitialize)(this.in_3_pb_ts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.in_2_pb_ts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.in_1_pb_ts)).BeginInit();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.out_pb2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.out_pb1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.out_pb4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.out_pb3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.out_pb6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.out_pb5)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.in_8_pb_sk)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in_7_pb_sk)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in_6_pb_sk)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in_5_pb_sk)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in_4_pb_sk)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in_3_pb_sk)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in_2_pb_sk)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in_1_pb_sk)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -170,6 +170,13 @@ namespace DeviceManagerLKDS
             this.panel1.Size = new System.Drawing.Size(1063, 186);
             this.panel1.TabIndex = 0;
             // 
+            // software_version_tb
+            // 
+            this.software_version_tb.Location = new System.Drawing.Point(360, 116);
+            this.software_version_tb.Name = "software_version_tb";
+            this.software_version_tb.Size = new System.Drawing.Size(341, 20);
+            this.software_version_tb.TabIndex = 10;
+            // 
             // device_name_lb
             // 
             this.device_name_lb.AutoSize = true;
@@ -179,6 +186,13 @@ namespace DeviceManagerLKDS
             this.device_name_lb.Size = new System.Drawing.Size(157, 26);
             this.device_name_lb.TabIndex = 7;
             this.device_name_lb.Text = "Название прибора:";
+            // 
+            // device_address_tb
+            // 
+            this.device_address_tb.Location = new System.Drawing.Point(360, 81);
+            this.device_address_tb.Name = "device_address_tb";
+            this.device_address_tb.Size = new System.Drawing.Size(341, 20);
+            this.device_address_tb.TabIndex = 8;
             // 
             // software_version_lb
             // 
@@ -190,6 +204,13 @@ namespace DeviceManagerLKDS
             this.software_version_lb.TabIndex = 11;
             this.software_version_lb.Text = "Программная версия:";
             // 
+            // device_status_tb
+            // 
+            this.device_status_tb.Location = new System.Drawing.Point(360, 44);
+            this.device_status_tb.Name = "device_status_tb";
+            this.device_status_tb.Size = new System.Drawing.Size(341, 20);
+            this.device_status_tb.TabIndex = 7;
+            // 
             // device_status_lb
             // 
             this.device_status_lb.AutoSize = true;
@@ -199,6 +220,13 @@ namespace DeviceManagerLKDS
             this.device_status_lb.Size = new System.Drawing.Size(152, 26);
             this.device_status_lb.TabIndex = 8;
             this.device_status_lb.Text = "Статус прибора:";
+            // 
+            // device_name_tb
+            // 
+            this.device_name_tb.Location = new System.Drawing.Point(360, 10);
+            this.device_name_tb.Name = "device_name_tb";
+            this.device_name_tb.Size = new System.Drawing.Size(341, 20);
+            this.device_name_tb.TabIndex = 6;
             // 
             // device_address_lb
             // 
@@ -221,34 +249,6 @@ namespace DeviceManagerLKDS
             this.arv_pb.TabIndex = 6;
             this.arv_pb.TabStop = false;
             // 
-            // device_status_tb
-            // 
-            this.device_status_tb.Location = new System.Drawing.Point(360, 44);
-            this.device_status_tb.Name = "device_status_tb";
-            this.device_status_tb.Size = new System.Drawing.Size(341, 20);
-            this.device_status_tb.TabIndex = 7;
-            // 
-            // device_address_tb
-            // 
-            this.device_address_tb.Location = new System.Drawing.Point(360, 81);
-            this.device_address_tb.Name = "device_address_tb";
-            this.device_address_tb.Size = new System.Drawing.Size(341, 20);
-            this.device_address_tb.TabIndex = 8;
-            // 
-            // software_version_tb
-            // 
-            this.software_version_tb.Location = new System.Drawing.Point(360, 116);
-            this.software_version_tb.Name = "software_version_tb";
-            this.software_version_tb.Size = new System.Drawing.Size(341, 20);
-            this.software_version_tb.TabIndex = 10;
-            // 
-            // device_name_tb
-            // 
-            this.device_name_tb.Location = new System.Drawing.Point(360, 10);
-            this.device_name_tb.Name = "device_name_tb";
-            this.device_name_tb.Size = new System.Drawing.Size(341, 20);
-            this.device_name_tb.TabIndex = 6;
-            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 3;
@@ -267,15 +267,237 @@ namespace DeviceManagerLKDS
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1063, 399);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
-            // panel2
+            // panel4
             // 
-            this.panel2.Controls.Add(this.dry_contacts_lb);
-            this.panel2.Controls.Add(this.panel5);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(348, 393);
-            this.panel2.TabIndex = 0;
+            this.panel4.Controls.Add(this.panel7);
+            this.panel4.Controls.Add(this.management_lb);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(711, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(349, 393);
+            this.panel4.TabIndex = 2;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.panel7.Controls.Add(this.vykl_btn6);
+            this.panel7.Controls.Add(this.vykl_btn5);
+            this.panel7.Controls.Add(this.vkl_btn6);
+            this.panel7.Controls.Add(this.vkl_btn5);
+            this.panel7.Controls.Add(this.out_pb6);
+            this.panel7.Controls.Add(this.out_pb5);
+            this.panel7.Controls.Add(this.vykl_btn4);
+            this.panel7.Controls.Add(this.vykl_btn3);
+            this.panel7.Controls.Add(this.vkl_btn4);
+            this.panel7.Controls.Add(this.vkl_btn3);
+            this.panel7.Controls.Add(this.out_pb4);
+            this.panel7.Controls.Add(this.out_pb3);
+            this.panel7.Controls.Add(this.vykl_btn2);
+            this.panel7.Controls.Add(this.vykl_btn1);
+            this.panel7.Controls.Add(this.vkl_btn2);
+            this.panel7.Controls.Add(this.vkl_btn1);
+            this.panel7.Controls.Add(this.out_pb2);
+            this.panel7.Controls.Add(this.out_pb1);
+            this.panel7.Location = new System.Drawing.Point(74, 59);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(221, 267);
+            this.panel7.TabIndex = 12;
+            // 
+            // vykl_btn6
+            // 
+            this.vykl_btn6.BackColor = System.Drawing.Color.Lavender;
+            this.vykl_btn6.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.vykl_btn6.Location = new System.Drawing.Point(135, 222);
+            this.vykl_btn6.Name = "vykl_btn6";
+            this.vykl_btn6.Size = new System.Drawing.Size(50, 32);
+            this.vykl_btn6.TabIndex = 57;
+            this.vykl_btn6.Text = "Выкл";
+            this.vykl_btn6.UseVisualStyleBackColor = false;
+            // 
+            // vykl_btn5
+            // 
+            this.vykl_btn5.BackColor = System.Drawing.Color.Lavender;
+            this.vykl_btn5.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.vykl_btn5.Location = new System.Drawing.Point(135, 179);
+            this.vykl_btn5.Name = "vykl_btn5";
+            this.vykl_btn5.Size = new System.Drawing.Size(50, 32);
+            this.vykl_btn5.TabIndex = 56;
+            this.vykl_btn5.Text = "Выкл";
+            this.vykl_btn5.UseVisualStyleBackColor = false;
+            // 
+            // vkl_btn6
+            // 
+            this.vkl_btn6.BackColor = System.Drawing.Color.Lavender;
+            this.vkl_btn6.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.vkl_btn6.Location = new System.Drawing.Point(41, 222);
+            this.vkl_btn6.Name = "vkl_btn6";
+            this.vkl_btn6.Size = new System.Drawing.Size(50, 32);
+            this.vkl_btn6.TabIndex = 55;
+            this.vkl_btn6.Text = "Вкл";
+            this.vkl_btn6.UseVisualStyleBackColor = false;
+            // 
+            // vkl_btn5
+            // 
+            this.vkl_btn5.BackColor = System.Drawing.Color.Lavender;
+            this.vkl_btn5.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.vkl_btn5.Location = new System.Drawing.Point(41, 179);
+            this.vkl_btn5.Name = "vkl_btn5";
+            this.vkl_btn5.Size = new System.Drawing.Size(50, 32);
+            this.vkl_btn5.TabIndex = 54;
+            this.vkl_btn5.Text = "Вкл";
+            this.vkl_btn5.UseVisualStyleBackColor = false;
+            // 
+            // out_pb6
+            // 
+            this.out_pb6.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.out_pb6.Location = new System.Drawing.Point(97, 222);
+            this.out_pb6.Name = "out_pb6";
+            this.out_pb6.Size = new System.Drawing.Size(32, 32);
+            this.out_pb6.TabIndex = 53;
+            this.out_pb6.TabStop = false;
+            // 
+            // out_pb5
+            // 
+            this.out_pb5.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.out_pb5.Location = new System.Drawing.Point(97, 179);
+            this.out_pb5.Name = "out_pb5";
+            this.out_pb5.Size = new System.Drawing.Size(32, 32);
+            this.out_pb5.TabIndex = 52;
+            this.out_pb5.TabStop = false;
+            // 
+            // vykl_btn4
+            // 
+            this.vykl_btn4.BackColor = System.Drawing.Color.Lavender;
+            this.vykl_btn4.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.vykl_btn4.Location = new System.Drawing.Point(135, 139);
+            this.vykl_btn4.Name = "vykl_btn4";
+            this.vykl_btn4.Size = new System.Drawing.Size(50, 32);
+            this.vykl_btn4.TabIndex = 51;
+            this.vykl_btn4.Text = "Выкл";
+            this.vykl_btn4.UseVisualStyleBackColor = false;
+            // 
+            // vykl_btn3
+            // 
+            this.vykl_btn3.BackColor = System.Drawing.Color.Lavender;
+            this.vykl_btn3.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.vykl_btn3.Location = new System.Drawing.Point(135, 98);
+            this.vykl_btn3.Name = "vykl_btn3";
+            this.vykl_btn3.Size = new System.Drawing.Size(50, 32);
+            this.vykl_btn3.TabIndex = 50;
+            this.vykl_btn3.Text = "Выкл";
+            this.vykl_btn3.UseVisualStyleBackColor = false;
+            // 
+            // vkl_btn4
+            // 
+            this.vkl_btn4.BackColor = System.Drawing.Color.Lavender;
+            this.vkl_btn4.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.vkl_btn4.Location = new System.Drawing.Point(41, 139);
+            this.vkl_btn4.Name = "vkl_btn4";
+            this.vkl_btn4.Size = new System.Drawing.Size(50, 32);
+            this.vkl_btn4.TabIndex = 49;
+            this.vkl_btn4.Text = "Вкл";
+            this.vkl_btn4.UseVisualStyleBackColor = false;
+            // 
+            // vkl_btn3
+            // 
+            this.vkl_btn3.BackColor = System.Drawing.Color.Lavender;
+            this.vkl_btn3.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.vkl_btn3.Location = new System.Drawing.Point(41, 98);
+            this.vkl_btn3.Name = "vkl_btn3";
+            this.vkl_btn3.Size = new System.Drawing.Size(50, 32);
+            this.vkl_btn3.TabIndex = 48;
+            this.vkl_btn3.Text = "Вкл";
+            this.vkl_btn3.UseVisualStyleBackColor = false;
+            // 
+            // out_pb4
+            // 
+            this.out_pb4.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.out_pb4.Location = new System.Drawing.Point(97, 139);
+            this.out_pb4.Name = "out_pb4";
+            this.out_pb4.Size = new System.Drawing.Size(32, 32);
+            this.out_pb4.TabIndex = 47;
+            this.out_pb4.TabStop = false;
+            // 
+            // out_pb3
+            // 
+            this.out_pb3.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.out_pb3.Location = new System.Drawing.Point(97, 98);
+            this.out_pb3.Name = "out_pb3";
+            this.out_pb3.Size = new System.Drawing.Size(32, 32);
+            this.out_pb3.TabIndex = 46;
+            this.out_pb3.TabStop = false;
+            // 
+            // vykl_btn2
+            // 
+            this.vykl_btn2.BackColor = System.Drawing.Color.Lavender;
+            this.vykl_btn2.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.vykl_btn2.Location = new System.Drawing.Point(135, 55);
+            this.vykl_btn2.Name = "vykl_btn2";
+            this.vykl_btn2.Size = new System.Drawing.Size(50, 32);
+            this.vykl_btn2.TabIndex = 45;
+            this.vykl_btn2.Text = "Выкл";
+            this.vykl_btn2.UseVisualStyleBackColor = false;
+            // 
+            // vykl_btn1
+            // 
+            this.vykl_btn1.BackColor = System.Drawing.Color.Lavender;
+            this.vykl_btn1.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.vykl_btn1.Location = new System.Drawing.Point(135, 12);
+            this.vykl_btn1.Name = "vykl_btn1";
+            this.vykl_btn1.Size = new System.Drawing.Size(50, 32);
+            this.vykl_btn1.TabIndex = 44;
+            this.vykl_btn1.Text = "Выкл";
+            this.vykl_btn1.UseVisualStyleBackColor = false;
+            // 
+            // vkl_btn2
+            // 
+            this.vkl_btn2.BackColor = System.Drawing.Color.Lavender;
+            this.vkl_btn2.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.vkl_btn2.Location = new System.Drawing.Point(41, 55);
+            this.vkl_btn2.Name = "vkl_btn2";
+            this.vkl_btn2.Size = new System.Drawing.Size(50, 32);
+            this.vkl_btn2.TabIndex = 43;
+            this.vkl_btn2.Text = "Вкл";
+            this.vkl_btn2.UseVisualStyleBackColor = false;
+            // 
+            // vkl_btn1
+            // 
+            this.vkl_btn1.BackColor = System.Drawing.Color.Lavender;
+            this.vkl_btn1.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.vkl_btn1.Location = new System.Drawing.Point(41, 12);
+            this.vkl_btn1.Name = "vkl_btn1";
+            this.vkl_btn1.Size = new System.Drawing.Size(50, 32);
+            this.vkl_btn1.TabIndex = 42;
+            this.vkl_btn1.Text = "Вкл";
+            this.vkl_btn1.UseVisualStyleBackColor = false;
+            // 
+            // out_pb2
+            // 
+            this.out_pb2.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.out_pb2.Location = new System.Drawing.Point(97, 55);
+            this.out_pb2.Name = "out_pb2";
+            this.out_pb2.Size = new System.Drawing.Size(32, 32);
+            this.out_pb2.TabIndex = 41;
+            this.out_pb2.TabStop = false;
+            // 
+            // out_pb1
+            // 
+            this.out_pb1.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.out_pb1.Location = new System.Drawing.Point(97, 12);
+            this.out_pb1.Name = "out_pb1";
+            this.out_pb1.Size = new System.Drawing.Size(32, 32);
+            this.out_pb1.TabIndex = 40;
+            this.out_pb1.TabStop = false;
+            // 
+            // management_lb
+            // 
+            this.management_lb.AutoSize = true;
+            this.management_lb.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.management_lb.Location = new System.Drawing.Point(134, 9);
+            this.management_lb.Name = "management_lb";
+            this.management_lb.Size = new System.Drawing.Size(102, 26);
+            this.management_lb.TabIndex = 11;
+            this.management_lb.Text = "Управление";
             // 
             // panel3
             // 
@@ -287,202 +509,6 @@ namespace DeviceManagerLKDS
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(348, 393);
             this.panel3.TabIndex = 1;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.panel7);
-            this.panel4.Controls.Add(this.management_lb);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(711, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(349, 393);
-            this.panel4.TabIndex = 2;
-            // 
-            // dry_contacts_lb
-            // 
-            this.dry_contacts_lb.AutoSize = true;
-            this.dry_contacts_lb.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dry_contacts_lb.Location = new System.Drawing.Point(98, 9);
-            this.dry_contacts_lb.Name = "dry_contacts_lb";
-            this.dry_contacts_lb.Size = new System.Drawing.Size(147, 26);
-            this.dry_contacts_lb.TabIndex = 14;
-            this.dry_contacts_lb.Text = "Сухие контакты";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.panel5.Controls.Add(this.in_8_lb);
-            this.panel5.Controls.Add(this.in_7_lb);
-            this.panel5.Controls.Add(this.in_6_lb);
-            this.panel5.Controls.Add(this.in_5_lb);
-            this.panel5.Controls.Add(this.in_4_lb);
-            this.panel5.Controls.Add(this.in_3_lb);
-            this.panel5.Controls.Add(this.in_2_lb);
-            this.panel5.Controls.Add(this.in_1_lb);
-            this.panel5.Controls.Add(this.in_8_pb_sk);
-            this.panel5.Controls.Add(this.in_7_pb_sk);
-            this.panel5.Controls.Add(this.in_6_pb_sk);
-            this.panel5.Controls.Add(this.in_5_pb_sk);
-            this.panel5.Controls.Add(this.in_4_pb_sk);
-            this.panel5.Controls.Add(this.in_3_pb_sk);
-            this.panel5.Controls.Add(this.in_2_pb_sk);
-            this.panel5.Controls.Add(this.in_1_pb_sk);
-            this.panel5.Location = new System.Drawing.Point(61, 59);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(221, 267);
-            this.panel5.TabIndex = 13;
-            // 
-            // in_8_lb
-            // 
-            this.in_8_lb.AutoSize = true;
-            this.in_8_lb.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.in_8_lb.Location = new System.Drawing.Point(51, 234);
-            this.in_8_lb.Name = "in_8_lb";
-            this.in_8_lb.Size = new System.Drawing.Size(27, 15);
-            this.in_8_lb.TabIndex = 23;
-            this.in_8_lb.Text = "In 8";
-            // 
-            // in_7_lb
-            // 
-            this.in_7_lb.AutoSize = true;
-            this.in_7_lb.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.in_7_lb.Location = new System.Drawing.Point(51, 203);
-            this.in_7_lb.Name = "in_7_lb";
-            this.in_7_lb.Size = new System.Drawing.Size(27, 15);
-            this.in_7_lb.TabIndex = 22;
-            this.in_7_lb.Text = "In 7";
-            // 
-            // in_6_lb
-            // 
-            this.in_6_lb.AutoSize = true;
-            this.in_6_lb.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.in_6_lb.Location = new System.Drawing.Point(51, 172);
-            this.in_6_lb.Name = "in_6_lb";
-            this.in_6_lb.Size = new System.Drawing.Size(27, 15);
-            this.in_6_lb.TabIndex = 21;
-            this.in_6_lb.Text = "In 6";
-            // 
-            // in_5_lb
-            // 
-            this.in_5_lb.AutoSize = true;
-            this.in_5_lb.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.in_5_lb.Location = new System.Drawing.Point(51, 141);
-            this.in_5_lb.Name = "in_5_lb";
-            this.in_5_lb.Size = new System.Drawing.Size(27, 15);
-            this.in_5_lb.TabIndex = 20;
-            this.in_5_lb.Text = "In 5";
-            // 
-            // in_4_lb
-            // 
-            this.in_4_lb.AutoSize = true;
-            this.in_4_lb.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.in_4_lb.Location = new System.Drawing.Point(51, 110);
-            this.in_4_lb.Name = "in_4_lb";
-            this.in_4_lb.Size = new System.Drawing.Size(27, 15);
-            this.in_4_lb.TabIndex = 19;
-            this.in_4_lb.Text = "In 4";
-            // 
-            // in_3_lb
-            // 
-            this.in_3_lb.AutoSize = true;
-            this.in_3_lb.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.in_3_lb.Location = new System.Drawing.Point(51, 79);
-            this.in_3_lb.Name = "in_3_lb";
-            this.in_3_lb.Size = new System.Drawing.Size(27, 15);
-            this.in_3_lb.TabIndex = 18;
-            this.in_3_lb.Text = "In 3";
-            // 
-            // in_2_lb
-            // 
-            this.in_2_lb.AutoSize = true;
-            this.in_2_lb.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.in_2_lb.Location = new System.Drawing.Point(51, 49);
-            this.in_2_lb.Name = "in_2_lb";
-            this.in_2_lb.Size = new System.Drawing.Size(27, 15);
-            this.in_2_lb.TabIndex = 17;
-            this.in_2_lb.Text = "In 2";
-            // 
-            // in_1_lb
-            // 
-            this.in_1_lb.AutoSize = true;
-            this.in_1_lb.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.in_1_lb.Location = new System.Drawing.Point(51, 18);
-            this.in_1_lb.Name = "in_1_lb";
-            this.in_1_lb.Size = new System.Drawing.Size(27, 15);
-            this.in_1_lb.TabIndex = 16;
-            this.in_1_lb.Text = "In 1";
-            // 
-            // in_8_pb_sk
-            // 
-            this.in_8_pb_sk.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.in_8_pb_sk.Location = new System.Drawing.Point(18, 229);
-            this.in_8_pb_sk.Name = "in_8_pb_sk";
-            this.in_8_pb_sk.Size = new System.Drawing.Size(26, 25);
-            this.in_8_pb_sk.TabIndex = 7;
-            this.in_8_pb_sk.TabStop = false;
-            // 
-            // in_7_pb_sk
-            // 
-            this.in_7_pb_sk.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.in_7_pb_sk.Location = new System.Drawing.Point(18, 198);
-            this.in_7_pb_sk.Name = "in_7_pb_sk";
-            this.in_7_pb_sk.Size = new System.Drawing.Size(26, 25);
-            this.in_7_pb_sk.TabIndex = 6;
-            this.in_7_pb_sk.TabStop = false;
-            // 
-            // in_6_pb_sk
-            // 
-            this.in_6_pb_sk.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.in_6_pb_sk.Location = new System.Drawing.Point(18, 167);
-            this.in_6_pb_sk.Name = "in_6_pb_sk";
-            this.in_6_pb_sk.Size = new System.Drawing.Size(26, 25);
-            this.in_6_pb_sk.TabIndex = 5;
-            this.in_6_pb_sk.TabStop = false;
-            // 
-            // in_5_pb_sk
-            // 
-            this.in_5_pb_sk.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.in_5_pb_sk.Location = new System.Drawing.Point(18, 136);
-            this.in_5_pb_sk.Name = "in_5_pb_sk";
-            this.in_5_pb_sk.Size = new System.Drawing.Size(26, 25);
-            this.in_5_pb_sk.TabIndex = 4;
-            this.in_5_pb_sk.TabStop = false;
-            // 
-            // in_4_pb_sk
-            // 
-            this.in_4_pb_sk.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.in_4_pb_sk.Location = new System.Drawing.Point(18, 105);
-            this.in_4_pb_sk.Name = "in_4_pb_sk";
-            this.in_4_pb_sk.Size = new System.Drawing.Size(26, 25);
-            this.in_4_pb_sk.TabIndex = 3;
-            this.in_4_pb_sk.TabStop = false;
-            // 
-            // in_3_pb_sk
-            // 
-            this.in_3_pb_sk.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.in_3_pb_sk.Location = new System.Drawing.Point(18, 74);
-            this.in_3_pb_sk.Name = "in_3_pb_sk";
-            this.in_3_pb_sk.Size = new System.Drawing.Size(26, 25);
-            this.in_3_pb_sk.TabIndex = 2;
-            this.in_3_pb_sk.TabStop = false;
-            // 
-            // in_2_pb_sk
-            // 
-            this.in_2_pb_sk.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.in_2_pb_sk.Location = new System.Drawing.Point(18, 43);
-            this.in_2_pb_sk.Name = "in_2_pb_sk";
-            this.in_2_pb_sk.Size = new System.Drawing.Size(26, 25);
-            this.in_2_pb_sk.TabIndex = 1;
-            this.in_2_pb_sk.TabStop = false;
-            // 
-            // in_1_pb_sk
-            // 
-            this.in_1_pb_sk.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.in_1_pb_sk.Location = new System.Drawing.Point(18, 12);
-            this.in_1_pb_sk.Name = "in_1_pb_sk";
-            this.in_1_pb_sk.Size = new System.Drawing.Size(26, 25);
-            this.in_1_pb_sk.TabIndex = 0;
-            this.in_1_pb_sk.TabStop = false;
             // 
             // reset_btn
             // 
@@ -698,227 +724,201 @@ namespace DeviceManagerLKDS
             this.trigger_state_lb.TabIndex = 15;
             this.trigger_state_lb.Text = "Триггерное состояние";
             // 
-            // panel7
+            // panel2
             // 
-            this.panel7.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.panel7.Controls.Add(this.vykl_btn6);
-            this.panel7.Controls.Add(this.vykl_btn5);
-            this.panel7.Controls.Add(this.vkl_btn6);
-            this.panel7.Controls.Add(this.vkl_btn5);
-            this.panel7.Controls.Add(this.out_pb6);
-            this.panel7.Controls.Add(this.out_pb5);
-            this.panel7.Controls.Add(this.vykl_btn4);
-            this.panel7.Controls.Add(this.vykl_btn3);
-            this.panel7.Controls.Add(this.vkl_btn4);
-            this.panel7.Controls.Add(this.vkl_btn3);
-            this.panel7.Controls.Add(this.out_pb4);
-            this.panel7.Controls.Add(this.out_pb3);
-            this.panel7.Controls.Add(this.vykl_btn2);
-            this.panel7.Controls.Add(this.vykl_btn1);
-            this.panel7.Controls.Add(this.vkl_btn2);
-            this.panel7.Controls.Add(this.vkl_btn1);
-            this.panel7.Controls.Add(this.out_pb2);
-            this.panel7.Controls.Add(this.out_pb1);
-            this.panel7.Location = new System.Drawing.Point(74, 59);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(221, 267);
-            this.panel7.TabIndex = 12;
+            this.panel2.Controls.Add(this.dry_contacts_lb);
+            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(348, 393);
+            this.panel2.TabIndex = 0;
             // 
-            // vykl_btn2
+            // dry_contacts_lb
             // 
-            this.vykl_btn2.BackColor = System.Drawing.Color.Lavender;
-            this.vykl_btn2.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.vykl_btn2.Location = new System.Drawing.Point(135, 55);
-            this.vykl_btn2.Name = "vykl_btn2";
-            this.vykl_btn2.Size = new System.Drawing.Size(50, 32);
-            this.vykl_btn2.TabIndex = 45;
-            this.vykl_btn2.Text = "Выкл";
-            this.vykl_btn2.UseVisualStyleBackColor = false;
+            this.dry_contacts_lb.AutoSize = true;
+            this.dry_contacts_lb.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dry_contacts_lb.Location = new System.Drawing.Point(98, 9);
+            this.dry_contacts_lb.Name = "dry_contacts_lb";
+            this.dry_contacts_lb.Size = new System.Drawing.Size(147, 26);
+            this.dry_contacts_lb.TabIndex = 14;
+            this.dry_contacts_lb.Text = "Сухие контакты";
             // 
-            // vykl_btn1
+            // panel5
             // 
-            this.vykl_btn1.BackColor = System.Drawing.Color.Lavender;
-            this.vykl_btn1.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.vykl_btn1.Location = new System.Drawing.Point(135, 12);
-            this.vykl_btn1.Name = "vykl_btn1";
-            this.vykl_btn1.Size = new System.Drawing.Size(50, 32);
-            this.vykl_btn1.TabIndex = 44;
-            this.vykl_btn1.Text = "Выкл";
-            this.vykl_btn1.UseVisualStyleBackColor = false;
+            this.panel5.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.panel5.Controls.Add(this.in_8_lb);
+            this.panel5.Controls.Add(this.in_7_lb);
+            this.panel5.Controls.Add(this.in_6_lb);
+            this.panel5.Controls.Add(this.in_5_lb);
+            this.panel5.Controls.Add(this.in_4_lb);
+            this.panel5.Controls.Add(this.in_3_lb);
+            this.panel5.Controls.Add(this.in_2_lb);
+            this.panel5.Controls.Add(this.in_1_lb);
+            this.panel5.Controls.Add(this.in_8_pb_sk);
+            this.panel5.Controls.Add(this.in_7_pb_sk);
+            this.panel5.Controls.Add(this.in_6_pb_sk);
+            this.panel5.Controls.Add(this.in_5_pb_sk);
+            this.panel5.Controls.Add(this.in_4_pb_sk);
+            this.panel5.Controls.Add(this.in_3_pb_sk);
+            this.panel5.Controls.Add(this.in_2_pb_sk);
+            this.panel5.Controls.Add(this.in_1_pb_sk);
+            this.panel5.Location = new System.Drawing.Point(61, 59);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(221, 267);
+            this.panel5.TabIndex = 13;
             // 
-            // vkl_btn2
+            // in_8_lb
             // 
-            this.vkl_btn2.BackColor = System.Drawing.Color.Lavender;
-            this.vkl_btn2.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.vkl_btn2.Location = new System.Drawing.Point(41, 55);
-            this.vkl_btn2.Name = "vkl_btn2";
-            this.vkl_btn2.Size = new System.Drawing.Size(50, 32);
-            this.vkl_btn2.TabIndex = 43;
-            this.vkl_btn2.Text = "Вкл";
-            this.vkl_btn2.UseVisualStyleBackColor = false;
+            this.in_8_lb.AutoSize = true;
+            this.in_8_lb.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.in_8_lb.Location = new System.Drawing.Point(51, 234);
+            this.in_8_lb.Name = "in_8_lb";
+            this.in_8_lb.Size = new System.Drawing.Size(27, 15);
+            this.in_8_lb.TabIndex = 23;
+            this.in_8_lb.Text = "In 8";
             // 
-            // vkl_btn1
+            // in_7_lb
             // 
-            this.vkl_btn1.BackColor = System.Drawing.Color.Lavender;
-            this.vkl_btn1.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.vkl_btn1.Location = new System.Drawing.Point(41, 12);
-            this.vkl_btn1.Name = "vkl_btn1";
-            this.vkl_btn1.Size = new System.Drawing.Size(50, 32);
-            this.vkl_btn1.TabIndex = 42;
-            this.vkl_btn1.Text = "Вкл";
-            this.vkl_btn1.UseVisualStyleBackColor = false;
+            this.in_7_lb.AutoSize = true;
+            this.in_7_lb.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.in_7_lb.Location = new System.Drawing.Point(51, 203);
+            this.in_7_lb.Name = "in_7_lb";
+            this.in_7_lb.Size = new System.Drawing.Size(27, 15);
+            this.in_7_lb.TabIndex = 22;
+            this.in_7_lb.Text = "In 7";
             // 
-            // out_pb2
+            // in_6_lb
             // 
-            this.out_pb2.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.out_pb2.Location = new System.Drawing.Point(97, 55);
-            this.out_pb2.Name = "out_pb2";
-            this.out_pb2.Size = new System.Drawing.Size(32, 32);
-            this.out_pb2.TabIndex = 41;
-            this.out_pb2.TabStop = false;
+            this.in_6_lb.AutoSize = true;
+            this.in_6_lb.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.in_6_lb.Location = new System.Drawing.Point(51, 172);
+            this.in_6_lb.Name = "in_6_lb";
+            this.in_6_lb.Size = new System.Drawing.Size(27, 15);
+            this.in_6_lb.TabIndex = 21;
+            this.in_6_lb.Text = "In 6";
             // 
-            // out_pb1
+            // in_5_lb
             // 
-            this.out_pb1.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.out_pb1.Location = new System.Drawing.Point(97, 12);
-            this.out_pb1.Name = "out_pb1";
-            this.out_pb1.Size = new System.Drawing.Size(32, 32);
-            this.out_pb1.TabIndex = 40;
-            this.out_pb1.TabStop = false;
+            this.in_5_lb.AutoSize = true;
+            this.in_5_lb.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.in_5_lb.Location = new System.Drawing.Point(51, 141);
+            this.in_5_lb.Name = "in_5_lb";
+            this.in_5_lb.Size = new System.Drawing.Size(27, 15);
+            this.in_5_lb.TabIndex = 20;
+            this.in_5_lb.Text = "In 5";
             // 
-            // management_lb
+            // in_4_lb
             // 
-            this.management_lb.AutoSize = true;
-            this.management_lb.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.management_lb.Location = new System.Drawing.Point(134, 9);
-            this.management_lb.Name = "management_lb";
-            this.management_lb.Size = new System.Drawing.Size(102, 26);
-            this.management_lb.TabIndex = 11;
-            this.management_lb.Text = "Управление";
+            this.in_4_lb.AutoSize = true;
+            this.in_4_lb.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.in_4_lb.Location = new System.Drawing.Point(51, 110);
+            this.in_4_lb.Name = "in_4_lb";
+            this.in_4_lb.Size = new System.Drawing.Size(27, 15);
+            this.in_4_lb.TabIndex = 19;
+            this.in_4_lb.Text = "In 4";
             // 
-            // vykl_btn4
+            // in_3_lb
             // 
-            this.vykl_btn4.BackColor = System.Drawing.Color.Lavender;
-            this.vykl_btn4.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.vykl_btn4.Location = new System.Drawing.Point(135, 139);
-            this.vykl_btn4.Name = "vykl_btn4";
-            this.vykl_btn4.Size = new System.Drawing.Size(50, 32);
-            this.vykl_btn4.TabIndex = 51;
-            this.vykl_btn4.Text = "Выкл";
-            this.vykl_btn4.UseVisualStyleBackColor = false;
+            this.in_3_lb.AutoSize = true;
+            this.in_3_lb.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.in_3_lb.Location = new System.Drawing.Point(51, 79);
+            this.in_3_lb.Name = "in_3_lb";
+            this.in_3_lb.Size = new System.Drawing.Size(27, 15);
+            this.in_3_lb.TabIndex = 18;
+            this.in_3_lb.Text = "In 3";
             // 
-            // vykl_btn3
+            // in_2_lb
             // 
-            this.vykl_btn3.BackColor = System.Drawing.Color.Lavender;
-            this.vykl_btn3.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.vykl_btn3.Location = new System.Drawing.Point(135, 98);
-            this.vykl_btn3.Name = "vykl_btn3";
-            this.vykl_btn3.Size = new System.Drawing.Size(50, 32);
-            this.vykl_btn3.TabIndex = 50;
-            this.vykl_btn3.Text = "Выкл";
-            this.vykl_btn3.UseVisualStyleBackColor = false;
+            this.in_2_lb.AutoSize = true;
+            this.in_2_lb.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.in_2_lb.Location = new System.Drawing.Point(51, 49);
+            this.in_2_lb.Name = "in_2_lb";
+            this.in_2_lb.Size = new System.Drawing.Size(27, 15);
+            this.in_2_lb.TabIndex = 17;
+            this.in_2_lb.Text = "In 2";
             // 
-            // vkl_btn4
+            // in_1_lb
             // 
-            this.vkl_btn4.BackColor = System.Drawing.Color.Lavender;
-            this.vkl_btn4.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.vkl_btn4.Location = new System.Drawing.Point(41, 139);
-            this.vkl_btn4.Name = "vkl_btn4";
-            this.vkl_btn4.Size = new System.Drawing.Size(50, 32);
-            this.vkl_btn4.TabIndex = 49;
-            this.vkl_btn4.Text = "Вкл";
-            this.vkl_btn4.UseVisualStyleBackColor = false;
+            this.in_1_lb.AutoSize = true;
+            this.in_1_lb.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.in_1_lb.Location = new System.Drawing.Point(51, 18);
+            this.in_1_lb.Name = "in_1_lb";
+            this.in_1_lb.Size = new System.Drawing.Size(27, 15);
+            this.in_1_lb.TabIndex = 16;
+            this.in_1_lb.Text = "In 1";
             // 
-            // vkl_btn3
+            // in_8_pb_sk
             // 
-            this.vkl_btn3.BackColor = System.Drawing.Color.Lavender;
-            this.vkl_btn3.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.vkl_btn3.Location = new System.Drawing.Point(41, 98);
-            this.vkl_btn3.Name = "vkl_btn3";
-            this.vkl_btn3.Size = new System.Drawing.Size(50, 32);
-            this.vkl_btn3.TabIndex = 48;
-            this.vkl_btn3.Text = "Вкл";
-            this.vkl_btn3.UseVisualStyleBackColor = false;
+            this.in_8_pb_sk.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.in_8_pb_sk.Location = new System.Drawing.Point(18, 229);
+            this.in_8_pb_sk.Name = "in_8_pb_sk";
+            this.in_8_pb_sk.Size = new System.Drawing.Size(26, 25);
+            this.in_8_pb_sk.TabIndex = 7;
+            this.in_8_pb_sk.TabStop = false;
             // 
-            // out_pb4
+            // in_7_pb_sk
             // 
-            this.out_pb4.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.out_pb4.Location = new System.Drawing.Point(97, 139);
-            this.out_pb4.Name = "out_pb4";
-            this.out_pb4.Size = new System.Drawing.Size(32, 32);
-            this.out_pb4.TabIndex = 47;
-            this.out_pb4.TabStop = false;
+            this.in_7_pb_sk.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.in_7_pb_sk.Location = new System.Drawing.Point(18, 198);
+            this.in_7_pb_sk.Name = "in_7_pb_sk";
+            this.in_7_pb_sk.Size = new System.Drawing.Size(26, 25);
+            this.in_7_pb_sk.TabIndex = 6;
+            this.in_7_pb_sk.TabStop = false;
             // 
-            // out_pb3
+            // in_6_pb_sk
             // 
-            this.out_pb3.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.out_pb3.Location = new System.Drawing.Point(97, 98);
-            this.out_pb3.Name = "out_pb3";
-            this.out_pb3.Size = new System.Drawing.Size(32, 32);
-            this.out_pb3.TabIndex = 46;
-            this.out_pb3.TabStop = false;
+            this.in_6_pb_sk.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.in_6_pb_sk.Location = new System.Drawing.Point(18, 167);
+            this.in_6_pb_sk.Name = "in_6_pb_sk";
+            this.in_6_pb_sk.Size = new System.Drawing.Size(26, 25);
+            this.in_6_pb_sk.TabIndex = 5;
+            this.in_6_pb_sk.TabStop = false;
             // 
-            // vykl_btn6
+            // in_5_pb_sk
             // 
-            this.vykl_btn6.BackColor = System.Drawing.Color.Lavender;
-            this.vykl_btn6.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.vykl_btn6.Location = new System.Drawing.Point(135, 222);
-            this.vykl_btn6.Name = "vykl_btn6";
-            this.vykl_btn6.Size = new System.Drawing.Size(50, 32);
-            this.vykl_btn6.TabIndex = 57;
-            this.vykl_btn6.Text = "Выкл";
-            this.vykl_btn6.UseVisualStyleBackColor = false;
+            this.in_5_pb_sk.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.in_5_pb_sk.Location = new System.Drawing.Point(18, 136);
+            this.in_5_pb_sk.Name = "in_5_pb_sk";
+            this.in_5_pb_sk.Size = new System.Drawing.Size(26, 25);
+            this.in_5_pb_sk.TabIndex = 4;
+            this.in_5_pb_sk.TabStop = false;
             // 
-            // vykl_btn5
+            // in_4_pb_sk
             // 
-            this.vykl_btn5.BackColor = System.Drawing.Color.Lavender;
-            this.vykl_btn5.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.vykl_btn5.Location = new System.Drawing.Point(135, 179);
-            this.vykl_btn5.Name = "vykl_btn5";
-            this.vykl_btn5.Size = new System.Drawing.Size(50, 32);
-            this.vykl_btn5.TabIndex = 56;
-            this.vykl_btn5.Text = "Выкл";
-            this.vykl_btn5.UseVisualStyleBackColor = false;
+            this.in_4_pb_sk.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.in_4_pb_sk.Location = new System.Drawing.Point(18, 105);
+            this.in_4_pb_sk.Name = "in_4_pb_sk";
+            this.in_4_pb_sk.Size = new System.Drawing.Size(26, 25);
+            this.in_4_pb_sk.TabIndex = 3;
+            this.in_4_pb_sk.TabStop = false;
             // 
-            // vkl_btn6
+            // in_3_pb_sk
             // 
-            this.vkl_btn6.BackColor = System.Drawing.Color.Lavender;
-            this.vkl_btn6.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.vkl_btn6.Location = new System.Drawing.Point(41, 222);
-            this.vkl_btn6.Name = "vkl_btn6";
-            this.vkl_btn6.Size = new System.Drawing.Size(50, 32);
-            this.vkl_btn6.TabIndex = 55;
-            this.vkl_btn6.Text = "Вкл";
-            this.vkl_btn6.UseVisualStyleBackColor = false;
+            this.in_3_pb_sk.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.in_3_pb_sk.Location = new System.Drawing.Point(18, 74);
+            this.in_3_pb_sk.Name = "in_3_pb_sk";
+            this.in_3_pb_sk.Size = new System.Drawing.Size(26, 25);
+            this.in_3_pb_sk.TabIndex = 2;
+            this.in_3_pb_sk.TabStop = false;
             // 
-            // vkl_btn5
+            // in_2_pb_sk
             // 
-            this.vkl_btn5.BackColor = System.Drawing.Color.Lavender;
-            this.vkl_btn5.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.vkl_btn5.Location = new System.Drawing.Point(41, 179);
-            this.vkl_btn5.Name = "vkl_btn5";
-            this.vkl_btn5.Size = new System.Drawing.Size(50, 32);
-            this.vkl_btn5.TabIndex = 54;
-            this.vkl_btn5.Text = "Вкл";
-            this.vkl_btn5.UseVisualStyleBackColor = false;
+            this.in_2_pb_sk.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.in_2_pb_sk.Location = new System.Drawing.Point(18, 43);
+            this.in_2_pb_sk.Name = "in_2_pb_sk";
+            this.in_2_pb_sk.Size = new System.Drawing.Size(26, 25);
+            this.in_2_pb_sk.TabIndex = 1;
+            this.in_2_pb_sk.TabStop = false;
             // 
-            // out_pb6
+            // in_1_pb_sk
             // 
-            this.out_pb6.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.out_pb6.Location = new System.Drawing.Point(97, 222);
-            this.out_pb6.Name = "out_pb6";
-            this.out_pb6.Size = new System.Drawing.Size(32, 32);
-            this.out_pb6.TabIndex = 53;
-            this.out_pb6.TabStop = false;
-            // 
-            // out_pb5
-            // 
-            this.out_pb5.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.out_pb5.Location = new System.Drawing.Point(97, 179);
-            this.out_pb5.Name = "out_pb5";
-            this.out_pb5.Size = new System.Drawing.Size(32, 32);
-            this.out_pb5.TabIndex = 52;
-            this.out_pb5.TabStop = false;
+            this.in_1_pb_sk.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.in_1_pb_sk.Location = new System.Drawing.Point(18, 12);
+            this.in_1_pb_sk.Name = "in_1_pb_sk";
+            this.in_1_pb_sk.Size = new System.Drawing.Size(26, 25);
+            this.in_1_pb_sk.TabIndex = 0;
+            this.in_1_pb_sk.TabStop = false;
             // 
             // UserControl1_ARVcs
             // 
@@ -933,12 +933,28 @@ namespace DeviceManagerLKDS
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.arv_pb)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.out_pb6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.out_pb5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.out_pb4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.out_pb3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.out_pb2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.out_pb1)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.in_8_pb_ts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in_7_pb_ts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in_6_pb_ts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in_5_pb_ts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in_4_pb_ts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in_3_pb_ts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in_2_pb_ts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.in_1_pb_ts)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.in_8_pb_sk)).EndInit();
@@ -949,22 +965,6 @@ namespace DeviceManagerLKDS
             ((System.ComponentModel.ISupportInitialize)(this.in_3_pb_sk)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.in_2_pb_sk)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.in_1_pb_sk)).EndInit();
-            this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.in_8_pb_ts)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.in_7_pb_ts)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.in_6_pb_ts)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.in_5_pb_ts)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.in_4_pb_ts)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.in_3_pb_ts)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.in_2_pb_ts)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.in_1_pb_ts)).EndInit();
-            this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.out_pb2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.out_pb1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.out_pb4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.out_pb3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.out_pb6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.out_pb5)).EndInit();
             this.ResumeLayout(false);
 
         }

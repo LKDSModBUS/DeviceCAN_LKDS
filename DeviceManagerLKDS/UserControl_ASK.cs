@@ -36,7 +36,7 @@ namespace DeviceManagerLKDS
                     in_3_pb_sk.BackColor = ((array[3] & 0x04) != 0) ? Color.Green : Color.White;
                     in_4_pb_sk.BackColor = ((array[3] & 0x08) != 0) ? Color.Green : Color.White;
                     in_5_pb_sk.BackColor = ((array[3] & 0x10) != 0) ? Color.Green : Color.White;
-                    in_6_pb_sk.BackColor = ((array[3] & 0x020) != 0) ? Color.Green : Color.White;
+                    in_6_pb_sk.BackColor = ((array[3] & 0x20) != 0) ? Color.Green : Color.White;
                     in_7_pb_sk.BackColor = ((array[3] & 0x40) != 0) ? Color.Green : Color.White;
                     in_8_pb_sk.BackColor = ((array[3] & 0x80) != 0) ? Color.Green : Color.White;
                     in_9_pb_sk.BackColor = ((array[2] & 0x01) != 0) ? Color.Green : Color.White;
@@ -52,18 +52,18 @@ namespace DeviceManagerLKDS
                     in_2_pb_ts.BackColor = ((array[5] & 0x02) != 0) ? Color.Green : Color.White;
                     in_3_pb_ts.BackColor = ((array[5] & 0x04) != 0) ? Color.Green : Color.White;
                     in_4_pb_ts.BackColor = ((array[5] & 0x08) != 0) ? Color.Green : Color.White;
-                    in_5_pb_ts.BackColor = ((array[5] & 0x010) != 0) ? Color.Green : Color.White;
-                    in_6_pb_ts.BackColor = ((array[5] & 0x020) != 0) ? Color.Green : Color.White;
-                    in_7_pb_ts.BackColor = ((array[5] & 0x040) != 0) ? Color.Green : Color.White;
-                    in_8_pb_ts.BackColor = ((array[5] & 0x080) != 0) ? Color.Green : Color.White;
+                    in_5_pb_ts.BackColor = ((array[5] & 0x10) != 0) ? Color.Green : Color.White;
+                    in_6_pb_ts.BackColor = ((array[5] & 0x20) != 0) ? Color.Green : Color.White;
+                    in_7_pb_ts.BackColor = ((array[5] & 0x40) != 0) ? Color.Green : Color.White;
+                    in_8_pb_ts.BackColor = ((array[5] & 0x80) != 0) ? Color.Green : Color.White;
                     in_9_pb_ts.BackColor = ((array[4] & 0x01) != 0) ? Color.Green : Color.White;
                     in_10_pb_ts.BackColor = ((array[4] & 0x02) != 0) ? Color.Green : Color.White;
                     in_11_pb_ts.BackColor = ((array[4] & 0x04) != 0) ? Color.Green : Color.White;
                     in_12_pb_ts.BackColor = ((array[4] & 0x08) != 0) ? Color.Green : Color.White;
-                    in_13_pb_ts.BackColor = ((array[4] & 0x010) != 0) ? Color.Green : Color.White;
-                    in_14_pb_ts.BackColor = ((array[4] & 0x020) != 0) ? Color.Green : Color.White;
-                    in_15_pb_ts.BackColor = ((array[4] & 0x040) != 0) ? Color.Green : Color.White;
-                    in_16_pb_ts.BackColor = ((array[4] & 0x080) != 0) ? Color.Green : Color.White;
+                    in_13_pb_ts.BackColor = ((array[4] & 0x10) != 0) ? Color.Green : Color.White;
+                    in_14_pb_ts.BackColor = ((array[4] & 0x20) != 0) ? Color.Green : Color.White;
+                    in_15_pb_ts.BackColor = ((array[4] & 0x40) != 0) ? Color.Green : Color.White;
+                    in_16_pb_ts.BackColor = ((array[4] & 0x80) != 0) ? Color.Green : Color.White;
                     software_version_tb.Text = $"{array[8]}.{array[9]}.{array[10]}";
                 }
             }

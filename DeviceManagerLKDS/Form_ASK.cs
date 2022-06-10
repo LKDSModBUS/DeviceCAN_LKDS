@@ -20,7 +20,7 @@ namespace DeviceManagerLKDS
 
            private void button1_Click(object sender, EventArgs e)
             {
-                OpenFileDialog dlg = new OpenFileDialog();
+                 OpenFileDialog dlg = new OpenFileDialog();
                  if (dlg.ShowDialog() == DialogResult.OK)
                  {
                     byte[] array = File.ReadAllBytes(dlg.FileName);
